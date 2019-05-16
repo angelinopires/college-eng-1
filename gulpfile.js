@@ -17,7 +17,7 @@ gulp.task("html", () => {
 });
 
 gulp.task("sass", () => {
-    $.fancyLog('-> Compiling SCSS to CSS...');    
+    $.fancyLog('-> Compiling SCSS to CSS...');
 
     return gulp.src(pkg.paths.src.scss + pkg.vars.scssName)
         .pipe($.plumber({errorHandler: onError}))
@@ -32,7 +32,7 @@ gulp.task("sass", () => {
 
 gulp.task("css", ["sass"], () => {
     $.fancyLog('-> Mincing and building CSS...');
-    
+
     return gulp.src(pkg.globs.distCss)
         .pipe($.plumber({errorHandler: onError}))
         .pipe($.newer({dest: pkg.paths.dist.css + pkg.vars.siteCssName}))
