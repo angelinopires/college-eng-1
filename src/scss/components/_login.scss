@@ -52,6 +52,7 @@
     background-color: $grey;
 
     &::placeholder {
+      font-weight: bold;
       color: $dark-black;
     }
   }

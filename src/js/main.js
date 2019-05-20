@@ -1,3 +1,3 @@
-const teste = document.querySelector('body').addEventListener('click', e => {
-    console.log('kk eae men');
-});
+const submit = document.querySelector('.form-control .form__button');
+
+submit.addEventListener('click', () => window.location.href = "/solicitar.html");

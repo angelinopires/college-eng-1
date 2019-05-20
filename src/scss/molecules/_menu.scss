@@ -34,7 +34,6 @@
           ~ .navbar__icon {
               opacity: 1;
               transform: rotate(45deg) translate(-2px, -1px);
-            //   background-color: $white;
 
               &:nth-last-child(2) {
                   transform: rotate(-45deg) translate(0, -1px);
@@ -89,7 +88,6 @@
       color: $dark-black;
       text-decoration: none;
       @include transition;
-
       background: linear-gradient(to bottom, $darker-cyan 0%, $darker-cyan 98%);
       background-size: 0px 4px;
       background-repeat: no-repeat;
@@ -97,7 +95,7 @@
 
       &:hover {
           background-size: 100% 4px;
-          color: $darker-cyan;
+        //   color: $darker-cyan;
       }
   }
   &__item {
