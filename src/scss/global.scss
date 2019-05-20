@@ -1,3 +1,18 @@
 html {
   font-family: 'Montserrat';
 }
+.container {
+  background-color: $main-theme;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+}
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
