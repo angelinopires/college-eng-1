@@ -1,3 +1,5 @@
 const submit = document.querySelector('.form-control .form__button');
 
-submit.addEventListener('click', () => window.location.href = "/solicitar.html");
+if (submit) {
+  submit.addEventListener('click', () => window.location.href = "/solicitar.html");
+}

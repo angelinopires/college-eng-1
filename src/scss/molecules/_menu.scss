@@ -95,13 +95,13 @@
 
       &:hover {
           background-size: 100% 4px;
-        //   color: $darker-cyan;
       }
   }
   &__item {
-      color: $white;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       padding: 5px 0;
+      color: $white;
+      white-space: nowrap;
   }
   .logo {
       display: none;
