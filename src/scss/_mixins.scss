@@ -45,7 +45,11 @@
 @mixin background() {
   position: relative;
   width: 100%;
-overflow: hidden;
-background-size: cover;
-background-attachment: fixed;
+  overflow: hidden;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@mixin border-bottom() {
+  box-shadow: 1px 1px 1px rgba($black, .5);
 }

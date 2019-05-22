@@ -55,7 +55,7 @@ html {
 .sub-header {
   height: $subheader-height;
   padding: 1rem 0;
-  box-shadow: 1px 1px 1px rgba($black, .5);
+  @include border-bottom();
 
   .title {
     margin: 0;
