@@ -6,15 +6,25 @@ $turquoise-cyan: #30E2CF;
 $lighter-cyan:   #DCEDEB;
 $darker-cyan:    #41C3EE;
 
-$main-theme: #3D4B58;
-$green-theme: #8EA05D;
+$main-theme:   #3D4B58;
+$green-theme:  #8EA05D;
 $yellow-theme: #FED566;
-$grey-light: #F7EFDB;
+$grey-light:   #F7EFDB;
+
+// Dimensional Variables
+$header-height: 60px;
+$subheader-height: 100px;
+$border-radius-item: 10px;
+$border-radius-input: 20px;
+
+// Feedback Colors
+$green:  #74c54f;
+$yellow: #F0DB4F;
+$red:    red;
 
 // Other colors
 $font-color: lighten(#454545, 15%);
 $white:              #fff;
-$green:              #74c54f;
 $black:              #000;
 $medium-black:       #454545;
 $dark-black:         #333;

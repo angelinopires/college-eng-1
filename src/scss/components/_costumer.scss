@@ -7,10 +7,47 @@
   height: 100%;
   background-color: $white;
   box-shadow: 0px 0px 5px rgba($black, .5);
-  border-radius: 15px;
+  border-radius: $border-radius-item;
 
   &__img {
     margin-top: 1rem;
     width: 100%;
+  }
+}
+.request {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: $border-radius-item;
+  background-color: $grey;
+  box-shadow: 0px 0px 5px rgba($black, .5);
+
+  .sub-title,
+  .text {
+    margin-bottom: 1rem;
+  }
+  .sub-title {
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: .9rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  span {
+    font-size: .9rem;
+    font-weight: bold;
+
+    &.success {
+      color: $green;
+    }
+    &.warning {
+      color: $yellow;
+    }
+    &.danger {
+      color: $red;
+    }
   }
 }

@@ -37,8 +37,45 @@
 </header>
 
 <body>
-    <div class="container container--costumer">
-        <h2 class="title title-secondary">Consulta de Solicitações</h2>
+    <div class="container container--costumer container--no-padding">
+        <div class="sub-header">
+            <h2 class="title title-secondary">Consulta de Solicitações</h2>
+        </div>
+
+        <div class="content">
+            <div class="form-group">
+                <p class="form__label">Selecione um período:</p>
+                <input class="form__input" type="date">
+                <input class="form__input" type="date">
+            </div>
+            <!-- <h2 class="title title--secondary">Período de:</h2>
+            <h2 class="title title--secondary">10/05/2019 até 31/05/2019</h2> -->
+            <div class="request">
+                <h3 class="sub-title">Solicitação: <span>001</span></h3>
+                <p class="text">Data de Início: <span>10/05/2019</span></p>
+                <p class="text">Status: <span class="warning">Em Andamento</span></p>
+            </div>
+            <div class="request">
+                <h3 class="sub-title">Solicitação: <span>002</span></h3>
+                <p class="text">Data de Início: <span>11/05/2019</span></p>
+                <p class="text">Status: <span class="warning">Em Andamento</span></p>
+            </div>
+            <div class="request">
+                <h3 class="sub-title">Solicitação: <span>003</span></h3>
+                <p class="text">Data de Início: <span>11/05/2019</span></p>
+                <p class="text">Status: <span class="success">Concluído</span></p>
+            </div>
+            <div class="request">
+                <h3 class="sub-title">Solicitação: <span>004</span></h3>
+                <p class="text">Data de Início: <span>11/05/2019</span></p>
+                <p class="text">Status: <span class="success">Concluído</span></p>
+            </div>
+            <div class="request">
+                <h3 class="sub-title">Solicitação: <span>005</span></h3>
+                <p class="text">Data de Início: <span>14/05/2019</span></p>
+                <p class="text">Status: <span class="danger">Cancelado</span></p>
+            </div>
+        </div>
     </div>
     <script type="text/javascript"
             src="js/main.min.js"></script>
