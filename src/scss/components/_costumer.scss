@@ -10,8 +10,9 @@
   box-shadow: 0px 0px 5px rgba($black, .5);
 
   &__img {
-    margin-top: 1rem;
+    max-height: 200px;
     width: 100%;
+    margin-top: 1rem;
   }
 }
 .request {
