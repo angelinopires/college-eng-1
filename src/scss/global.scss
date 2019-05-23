@@ -32,6 +32,10 @@ html {
   padding: 1rem;
   background-color: $main-theme;
 
+  &-costumer {
+    max-height: 300px;
+    overflow-y: auto;
+  }
   .form {
     &__input {
       border-radius: $border-radius-input;

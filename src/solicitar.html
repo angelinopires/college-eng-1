@@ -38,55 +38,169 @@
 
 <body>
     <div class="container container--costumer container--black">
-      <div class="costumer costumer--add">
-        <h2 class="title title--secondary">Solicitar Materiais</h2>
-        <img class="costumer__img" src="images/materials.svg" alt="Adicioanr Materiais">
-        <button id="add" class="btn btn--add">&plus;</button>
-      </div>
-
-      <div class="costumer costumer--form hidden">
-        <h2 class="title title--secondary black">Criar Solicitação</h2>
-
-        <div class="form-group">
-            <select class="input" name="centroDeCusto" id="costs">
-                <option value="1">Admnistração</option>
-                <option value="2">Almoxarifado</option>
-                <option value="3">Contabilidade</option>
-                <option value="4">Linha de Produção</option>
-                <option value="5">T.I</option>
-            </select>
-
-            <select class="input" name="produtos" id="products">
-                <option value="1">Produto A</option>
-                <option value="2">Produto B</option>
-                <option value="3">Produto C</option>
-                <option value="4">Produto D</option>
-                <option value="5">Produto E</option>
-            </select>
+        <div class="costumer costumer--add">
+            <h2 class="title title--secondary">Solicitar Materiais</h2>
+            <img class="costumer__img"
+                 src="images/materials.svg"
+                 alt="Adicionar Materiais">
+            <button id="add"
+                    class="btn btn--add">&plus;</button>
         </div>
 
-        <div class="form-group">
-            <input class="input input__text" type="text" placeholder="Quantidade">
+        <div class="costumer costumer--form hidden">
+            <h2 class="title title--secondary black">Criar Solicitação</h2>
 
-            <select class="input" name="unidades" id="unit">
-                <option value="1">CX</option>
-                <option value="2">UN</option>
-            </select>
+            <div class="form-group">
+                <select class="input"
+                        name="centroDeCusto"
+                        id="costs">
+                    <option value="1">Admnistração</option>
+                    <option value="2">Almoxarifado</option>
+                    <option value="3">Contabilidade</option>
+                    <option value="4">Linha de Produção</option>
+                    <option value="5">T.I</option>
+                </select>
+
+                <select class="input"
+                        name="produtos"
+                        id="products">
+                    <option value="1">Post-it</option>
+                    <option value="2">Produto B</option>
+                    <option value="3">Produto C</option>
+                    <option value="4">Produto D</option>
+                    <option value="5">Produto E</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input class="input input__text"
+                       type="text"
+                       placeholder="Quantidade"
+                       value="30">
+
+                <select class="input"
+                        name="unidades"
+                        id="unit">
+                    <option value="1">CX</option>
+                    <option value="2">UN</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input class="input input__text"
+                       type="text"
+                       placeholder="Dimensões"
+                       value="Dimensões: 8mm x 8mm x 3mm">
+            </div>
+
+            <div class="form-group">
+                <textarea class="input input__text"
+                          cols="30"
+                          rows="4"
+                          placeholder="Descrição do Produto">Este produto geralmente é utilizado para manusear ferramenta X na linha de produção.</textarea>
+            </div>
+
+            <div class="btn-group">
+                <button class="btn btn--action">Adicionar</button>
+                <button id="confirm"
+                        class="btn btn--action green">Finalizar</button>
+            </div>
         </div>
 
-        <div class="form-group">
-            <input class="input input__text" type="text" placeholder="Dimensões" value="Dimensões: 12mm x 20mm x 10mm">
-        </div>
+        <div class="costumer costumer--confirm hidden">
+            <h2 class="title title--secondary black">Confimar Solicitação</h2>
 
-        <div class="form-group">
-            <textarea class="input input__text" cols="30" rows="4" placeholder="Descrição do Produto">Este produto geralmente é utilizado para manusear ferramenta X na linha de produção.</textarea>
-        </div>
+            <div class="content-costumer">
+                <div class="product-group">
+                    <div class="form-group">
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Produto"
+                               value="Flange Média">
+                    </div>
 
-        <div class="btn-group">
-            <button class="btn btn--action">Adicionar</button>
-            <button class="btn btn--action green">Finalizar</button>
+                    <div class="form-group">
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Centro de Custo"
+                               value="Produção">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input"
+                               type="text"
+                               placeholder="Quantidade"
+                               value="2">
+
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Tipo de Unidade"
+                               value="UN">
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Valor"
+                               value="R$ 133,10">
+                    </div>
+                </div>
+
+                <div class="product-group">
+                    <div class="form-group">
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Produto"
+                               value="Post-it">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Centro de Custo"
+                               value="Admnistração">
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input"
+                               type="text"
+                               placeholder="Quantidade"
+                               value="30">
+
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Tipo de Unidade"
+                               value="UN">
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="input input__text"
+                               type="text"
+                               placeholder="Valor"
+                               value="R$ 17,50">
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <button id="send"
+                        class="btn btn--action green">Finalizar</button>
+            </div>
         </div>
-      </div>
+    </div>
+
+    <div class="modal modal--feedback">
+        <div class="modal__content">
+            <div class="modal__body">
+                <figure class="modal__image">
+                    <img src="./images/check.svg" alt="">
+                </figure>
+                <p class="modal__text">Sua solicitação de compras foi feita com sucesso!</p>
+                <button id="close-modal" class="btn btn--action">OK</button>
+            </div>
+        </div>
     </div>
     <script type="text/javascript"
             src="js/main.min.js"></script>

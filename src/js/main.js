@@ -2,11 +2,16 @@ const submit = document.querySelector('.form-control .form__button');
 const requests = Array.from(document.querySelectorAll('.request-list .request'));
 const modalList = document.querySelector('.modal');
 const modalFeedback = document.querySelector('.modal--feedback');
-const openFeedback = document.querySelector('#open-modal');
-const closeFeedback = document.querySelector('#close-modal');
-const add = document.querySelector('#add');
 const costumerAdd = document.querySelector('.costumer--add');
 const costumerForm = document.querySelector('.costumer--form');
+const costumerConfirm = document.querySelector('.costumer--confirm');
+
+// buttons
+const add = document.querySelector('#add');
+const confirm = document.querySelector('#confirm');
+const openFeedback = document.querySelector('#open-modal');
+const closeFeedback = document.querySelector('#close-modal');
+const send = document.querySelector('#send');
 
 if (submit) {
   submit.addEventListener('click', () => window.location.href = "/solicitar.html");
@@ -43,3 +48,17 @@ if (add) {
     }
   });
 }
+
+if (confirm) {
+  confirm.addEventListener('click', () => {
+    if (costumerConfirm.classList.contains('hidden')) {
+      costumerForm.classList.toggle('hidden');
+      costumerConfirm.classList.toggle('hidden');
+    }
+  });
+}
+
+if (send) {
+  send.addEventListener('click', () => modalFeedback.classList.toggle('show'));
+}
+
