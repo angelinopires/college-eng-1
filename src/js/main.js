@@ -4,6 +4,9 @@ const modalList = document.querySelector('.modal');
 const modalFeedback = document.querySelector('.modal--feedback');
 const openFeedback = document.querySelector('#open-modal');
 const closeFeedback = document.querySelector('#close-modal');
+const add = document.querySelector('#add');
+const costumerAdd = document.querySelector('.costumer--add');
+const costumerForm = document.querySelector('.costumer--form');
 
 if (submit) {
   submit.addEventListener('click', () => window.location.href = "/solicitar.html");
@@ -30,4 +33,13 @@ if (openFeedback) {
 
 if (closeFeedback) {
   closeFeedback.addEventListener('click', () => modalFeedback.classList.toggle('show'));
+}
+
+if (add) {
+  add.addEventListener('click', () => {
+    if (costumerForm.classList.contains('hidden')) {
+      costumerAdd.classList.toggle('hidden');
+      costumerForm.classList.toggle('hidden');
+    }
+  });
 }

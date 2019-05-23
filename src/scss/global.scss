@@ -51,6 +51,9 @@ html {
     font-size: 1.3rem;
     margin: 1rem .8rem;
   }
+  &.black {
+    color: $black;
+  }
 }
 .sub-header {
   height: $subheader-height;
@@ -61,4 +64,6 @@ html {
     margin: 0;
   }
 }
-
+.hidden {
+  display: none !important;
+}

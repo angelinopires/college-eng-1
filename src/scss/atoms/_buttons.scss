@@ -21,4 +21,8 @@
     background-color: $grey;
     border-radius: $border-radius-item;
   }
+  &.green {
+    background-color: $green;
+    font-weight: bold;
+  }
 }

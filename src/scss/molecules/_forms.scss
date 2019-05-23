@@ -4,3 +4,11 @@
     color: $white;
   }
 }
+.input  {
+  min-height: 30px;
+  padding-left: .3rem;
+
+  &__text {
+    width: 100%;
+  }
+}
